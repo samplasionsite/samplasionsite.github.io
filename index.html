@@ -16,6 +16,30 @@
     <title>SamplasionWeb</title>
   </head>
   <body>
+	<nav class="navbar">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="/">SamplasionWeb</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+		<li class="dropdown">
+		  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lang <span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+		    <li><a href="/">EN</a></li>
+		    <li><a href="/it">IT</a></li>
+		  </ul>
+		</li>
+		<li><a href="/about">About</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 	<div class="container">
 		<div class="jumbotron">
 			<h1>SamplasionWeb</h1> 
@@ -23,21 +47,9 @@
 		</div>
 		<p>This is some text.</p> 
 		<p>This is another text.</p>
-  	</div>
-    <div class="alert alert-success">
-      <strong>Success!</strong> Indicates a successful or positive action.
-    </div>
-
-    <div class="alert alert-info">
-      <strong>Info!</strong> Indicates a neutral informative change or action.
-    </div>
-
-    <div class="alert alert-warning">
-      <strong>Warning!</strong> Indicates a warning that might need attention.
-    </div>
-
-    <div class="alert alert-danger">
-     <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-    </div>
+	    <div class="alert alert-success">
+	      <strong>Success!</strong> You've succesfully landed on my website!
+	    </div>
+	</div>
   </body>
 </html>
