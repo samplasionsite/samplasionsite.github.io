@@ -12,9 +12,9 @@ title: Home (IT)
 	    </div>
 	
 
-	<h1>To Super Mario Odyssey:</p>
+	<h1>Per Super Mario Odyssey:</p>
 <!-- Display the countdown timer in an element -->
-<p id="demo" style="font-size:2.7em;"></p>
+<h4 id="demo"></h4>
 
 <script>
 // Set the date we're counting down to
@@ -30,17 +30,17 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  var ggg = "giorni, "
+  var ggg = " giorni, "
   if (days == 1) {
-  	ggg = "giorno, "
+  	ggg = " giorno, "
   }
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "giorni, " + hours + "ore, "
-  + minutes + "minuti e " + seconds + "secondi ";
+  document.getElementById("demo").innerHTML = days + ggg + hours + "ore, "
+  + minutes + " minuti e " + seconds + " secondi ";
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "ORA IN VENDITA!";
   }
 }, 1000);
 </script>
