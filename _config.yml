@@ -1,0 +1,7 @@
+name: "SamplasionWeb"
+title_separator: "-"
+markdown: kramdown
+gems:
+ - jemoji
+ - jekyll-mentions
+ - jekyll-sitemap
