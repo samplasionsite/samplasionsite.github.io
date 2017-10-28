@@ -48,7 +48,14 @@
 	  </div>
 	</nav>
 	<br id="toTop"><br><br><br>
-  {{ content }}
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+  </ul>
 	<footer class="container-fluid text-center">
  	 <a href="#toTop" title="To Top">
  	   <span class="glyphicon glyphicon-chevron-up"></span>
