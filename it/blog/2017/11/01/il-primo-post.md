@@ -1,6 +1,6 @@
 ---
 title: Come installare Mac OS X su un normale PC
-layout: default
+layout: default-it
 date: 2017/11/01
 ---
 Arieccomi! Questo sarà il mio decimo sito, e, come ormai è per me tradizione, il primo post sarà proprio ”Come installare Mac OS X 10.6.2 Hazard su PC”! <!-- more -->
