@@ -1,5 +1,4 @@
 ---
-permalink: /it/blog/:year/:month/:day/:title
 title: Come installare Mac OS X su un normale PC
 layout: default
 date: 2017/11/01
