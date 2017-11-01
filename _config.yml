@@ -5,5 +5,4 @@ gems:
  - jemoji
  - jekyll-mentions
  - jekyll-sitemap
-collections:
- - postsit
+ - jekyll-feed
