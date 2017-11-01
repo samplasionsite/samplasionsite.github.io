@@ -1,0 +1,52 @@
+---
+title: Come installare Mac OS X su un normale PC
+layout: default-it
+date: 2017/11/01
+---
+<button class="button button-info" onclick="history.go(-1)">Indietro</button>
+<h1>{{ page.title }}</h1><small>In data: {{ page.date | date_to_string }}</small>
+
+Arieccomi! Questo sarà il mio decimo sito, e, come ormai è per me tradizione, il primo post sarà proprio&nbsp;”Come installare Mac OS X 10.6.2 Hazard su PC”!<br>
+<a name="more"></a><br>
+Ho scritto questa guida completamente a memoria, quindi chiedo perdono per eventuali mancanze.<br>
+<br>
+<h3>
+Occorrente:</h3>
+<ul>
+<li>Un computer con processore Intel</li>
+<li>La DMG di Mac OS X by Hazard [Quick Search: <a href="https://www.google.it/search?q=mac+os+x+10.6.2+by+hazard+iso" target="_blank">Mac OS X Hazard 10.6.2 ISO</a>]</li>
+<li>A seconda del procedimento, CDBurnerXP e un DVD vuoto</li>
+<li>A seconda del procedimento, VirtualBox</li>
+<li>Tanta, tantissima pazienza ;)</li>
+</ul>
+<div>
+<h4>
+Procedimento 1:</h4>
+</div>
+Questo procedimento si basa sulla masterizzazione dell’ISO su un DVD vuoto per l’installazione del sistema sull’hard disk. È il più rischioso, in quanto potrebbe portare alla perdita dei dati.
+Per prima cosa bisogna scaricare la DMG di Hazard. Ci sta mettendo tanto? Hehehe! Per un file di circa 5GB mi sembra più che normale no?
+Comunque, una volta ottenuta la DMG dell’OS bisogna convertirla con un fantastico programma chiamato "DMGtoISO" o una cosa del genere. Una volta convertita, la ISO va masterizzata con CDBurnerXP.<br>
+Per cui, apriamo il programma,&nbsp;doppio click su <span style="font-weight: bold;">Masterizza immagine ISO</span><span style="font-variant-ligatures: no-common-ligatures;">, cliccare su </span><span style="font-variant-ligatures: no-common-ligatures; font-weight: bold;">Sfoglia...</span><span style="font-variant-ligatures: no-common-ligatures;">, </span><span style="font-variant-ligatures: no-common-ligatures; font-weight: bold;">selezionare la ISO di Hazard appena creata</span><span style="font-variant-ligatures: no-common-ligatures;">, poco più in basso selezionare l'</span><span style="font-variant-ligatures: no-common-ligatures; font-weight: bold;">unità del DVD e la velocità <u>x2</u></span><span style="font-variant-ligatures: no-common-ligatures;">, masterizzare, aspettare una mezz'ora che masterizza, dare l'ok e spegnere il pc.</span></span><br>
+<span style="font-family: inherit;"><span style="font-variant-ligatures: no-common-ligatures;">Ora, il prossimo passo è un po’ più complicato: bisogna fare in modo che il PC parta dal disco. Da qualche parte forse c’è scritto il tasto che porta alla selezione del disco di avvio del BIOS (basic input-output system). Comunque sia, dovreste arrivare alla selezione del disco di avvio. Ovviamente, noi vogliamo installare winzozz, quindi lo scegliamo... no dai scherzo! Scegliamo il disco appena masterizzato e aspettiamo che la 1ª schermata di configurazione (quella della lingua) venga a noi. Selezioniamo Lingua Italiana, o&nbsp;</span></span><kbd><span class="glyphicon glyphicon-command"></span>+I</kbd> (comando(che dovrebbe essere il tasto “menu contestuale”) + I)e successivamente dalla barra dei menu scegliamo Utility &gt; Utility Disco. Scegliete e formattate in Mac OS Esteso (journaled) il disco che poi sarà quello d’installazione.</div>
+Fatto? Perfetto! Ora accettiamo tutto e andiamo avanti fino a che non compare la schermata selezione disco di installazione e <u style="font-style: italic; font-weight: bold;">NON CLICCARE SU INSTALLA!!</u>&nbsp;Piuttosto clicca quel rotondo pulsante chiamato “Personalizza...” e seleziona i kext (driver) compatibili con il tuo pc. Purtroppo questa è una fase delicata e io non ti posso aiutare... Fai una rapida ricerca Google oppure fai un po’ di trial and error. Quello su cui ti posso aiutare è, però, quando hai finito, che devi selezionare il disco formattato in precedenza.<br>
+La barra va, giusto? OK. Ha finito? Benissimo!<br>
+Quando riavvii il pc potrai usare quasi appieno il nuovo(?) sistema. Perché «quasi»? Perché è sicuro che una funzionalità, appunto, non funzioni. Ad esempio, potresti dover usare una connessione cablata perché non funziona il WiFi. Su tonymacx ci sono dei pacchetti di kext (driver) proprio per questo. Ma ciò non rientra nello scopo della guida.<br>
+<h4>
+Procedimento 2:</h4>
+<div>
+Questo secondo procedimento è meno complicato e più sicuro del primo, perché verrà fatto sulla Sandbox di VirtualBox. I primi passi son gli stessi, quindi: «…<i>Per prima cosa bisogna scaricare la DMG di Hazard. Ci sta mettendo tanto? Hehehe! Per un file di circa 5GB mi sembra più che normale no? Comunque, una volta ottenuta la DMG dell’OS bisogna convertirla con un fantastico programma chiamato "DMGtoISO" o una cosa del genere</i>…» — Autoquote 😉</div>
+<div>
+Apriamo VirtualBox e creiamo la macchina virtuale con le seguenti impostazioni:
+<br>
+<br>
+<ul>
+<li>Tipo: Mac OS X &gt; Snow Leopard (32 bit)</li>
+<li>RAM: <b>almeno</b>&nbsp;1024 MB (è importante!)</li>
+<li>Disco *.VBI con almeno 30 GB</li>
+</ul>
+<br></div>
+Andiamo nelle impostazioni della macchina virtuale appena creata e come disco di avvio selezioniamo la ISO convertita in precedenza; avviamo la macchina virtuale. Il resto è uguale: «…<i><span style="font-family: inherit;">aspettiamo che la 1ª schermata di configurazione (quella della lingua) venga a noi. Selezioniamo Lingua Italiana, o&nbsp;</span><kbd><span class="glyphicon glyphicon-command"></span>+I</kbd> (comando(che dovrebbe essere il tasto “menu contestuale”) + I)e successivamente dalla barra dei menu scegliamo Utility &gt; Utility Disco. Scegliete e formattate in Mac OS Esteso (journaled) il disco che poi sarà quello d’installazione.</i><br>
+<i>Fatto? Perfetto! Ora accettiamo tutto e andiamo avanti fino a che non compare la schermata selezione disco di installazione e&nbsp;<u style="font-weight: bold;">NON CLICCARE SU INSTALLA!!</u>&nbsp;Piuttosto clicca quel rotondo pulsante chiamato “Personalizza...” e seleziona i kext (driver) compatibili con il tuo pc. Purtroppo questa è una fase delicata e io non ti posso aiutare... Fai una rapida ricerca Google oppure fai un po’ di trial and error. Quello su cui ti posso aiutare è, però, quando hai finito, che devi selezionare il disco formattato in precedenza.</i><br>
+<i>La barra va, giusto? OK. Ha finito? Benissimo!</i><br>
+<i>Quando riavvii il pc potrai usare quasi appieno il nuovo(?) sistema. Perché «quasi»? Perché è sicuro che una funzionalità, appunto, non funzioni. Ad esempio, potresti dover usare una connessione cablata perché non funziona il WiFi. Su tonymacx ci sono dei pacchetti di kext (driver) proprio per questo. Ma ciò non rientra nello scopo della guida.</i>» — Autoquote 😉
+</div>
